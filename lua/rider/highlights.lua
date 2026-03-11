@@ -62,7 +62,7 @@ function M.get(c)
   highlights.DiffAdd      = { bg = c.added }
   highlights.DiffChange   = { bg = c.changed }
   highlights.DiffDelete   = { fg = c.deleted, bg = c.deleted }
-  highlights.DiffText     = { bg = "#2d4f8e" }
+  highlights.DiffText     = { bg = c.diff_text }
 
   -- Spell
   highlights.SpellBad     = { undercurl = true, sp = c.error }
@@ -176,10 +176,10 @@ function M.get(c)
   highlights.DiagnosticUnderlineWarn     = { undercurl = true, sp = c.warning }
   highlights.DiagnosticUnderlineInfo     = { undercurl = true, sp = c.info }
   highlights.DiagnosticUnderlineHint     = { undercurl = true, sp = c.hint }
-  highlights.DiagnosticVirtualTextError  = { fg = c.error, bg = "#3d2020" }
-  highlights.DiagnosticVirtualTextWarn   = { fg = c.warning, bg = "#3d3520" }
-  highlights.DiagnosticVirtualTextInfo   = { fg = c.info, bg = "#20303d" }
-  highlights.DiagnosticVirtualTextHint   = { fg = c.hint, bg = "#203d30" }
+  highlights.DiagnosticVirtualTextError  = { fg = c.error, bg = c.vt_error }
+  highlights.DiagnosticVirtualTextWarn   = { fg = c.warning, bg = c.vt_warn }
+  highlights.DiagnosticVirtualTextInfo   = { fg = c.info, bg = c.vt_info }
+  highlights.DiagnosticVirtualTextHint   = { fg = c.hint, bg = c.vt_hint }
   highlights.DiagnosticSignError         = { fg = c.error }
   highlights.DiagnosticSignWarn          = { fg = c.warning }
   highlights.DiagnosticSignInfo          = { fg = c.info }
@@ -201,6 +201,7 @@ function M.get(c)
   highlights.TelescopePromptTitle   = { fg = c.fg_bright, bg = c.bg_lighter, bold = true }
   highlights.TelescopePreviewTitle  = { fg = c.fg_bright, bg = c.bg_light, bold = true }
   highlights.TelescopeResultsTitle  = { fg = c.fg_bright, bg = c.bg_light, bold = true }
+  highlights.TelescopeResultsNormal = { fg = c.fg, bg = c.bg_light }
   highlights.TelescopeSelection     = { bg = c.selection }
   highlights.TelescopeMatching      = { fg = c.match, bold = true }
 

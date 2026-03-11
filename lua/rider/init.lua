@@ -9,6 +9,8 @@ function M.load()
   vim.o.background = "dark"
   vim.g.colors_name = "rider"
 
+  package.loaded["rider.palette"] = nil
+  package.loaded["rider.highlights"] = nil
   local palette = require("rider.palette")
   local highlights = require("rider.highlights")
 

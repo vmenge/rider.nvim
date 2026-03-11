@@ -29,7 +29,11 @@ M.colors = {
   line_nr    = "#808080",
   indent     = "#404040",
   border     = "#555555",
-  none       = "NONE",
+  diff_text  = "#2d4f8e",
+  vt_error   = "#3d2020",
+  vt_warn    = "#3d3520",
+  vt_info    = "#20303d",
+  vt_hint    = "#203d30",
 }
 
 return M
