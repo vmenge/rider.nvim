@@ -1,0 +1,35 @@
+local M = {}
+
+M.colors = {
+  bg         = "#262626",
+  bg_dark    = "#1e1e1e",
+  bg_light   = "#303030",
+  bg_lighter = "#3c3f41",
+  fg         = "#d0d0d0",
+  fg_dark    = "#a0a0a0",
+  fg_bright  = "#f0f0f0",
+  comment    = "#85c46c",
+  keyword    = "#6c95eb",
+  string     = "#c9a26d",
+  number     = "#ed94c0",
+  type       = "#c191ff",
+  func       = "#39cc9b",
+  constant   = "#66c3cc",
+  operator   = "#d0d0d0",
+  error      = "#ff5647",
+  warning    = "#d9b72b",
+  info       = "#6c95eb",
+  hint       = "#39cc9b",
+  selection  = "#08335e",
+  search     = "#144238",
+  match      = "#d9b72b",
+  added      = "#2c4722",
+  deleted    = "#bf3428",
+  changed    = "#293a5f",
+  line_nr    = "#808080",
+  indent     = "#404040",
+  border     = "#555555",
+  none       = "NONE",
+}
+
+return M
