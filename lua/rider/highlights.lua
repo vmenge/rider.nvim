@@ -257,6 +257,11 @@ function M.get(c)
   highlights.NeoTreeNormalNC        = { fg = c.fg, bg = c.bg_dark }
   highlights.NeoTreeDimText         = { fg = c.fg_dark }
 
+  -- F# (vim syntax)
+  highlights.fsharpKeyChar          = { fg = c.keyword }
+  highlights.fsharpOperator         = { fg = c.keyword }
+  highlights.fsharpFunDef           = { fg = c.keyword }
+
   return highlights
 end
 
