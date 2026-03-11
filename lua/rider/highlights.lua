@@ -262,6 +262,9 @@ function M.get(c)
   highlights.fsharpOperator         = { fg = c.keyword }
   highlights.fsharpFunDef           = { fg = c.keyword }
 
+  -- F# (LSP semantic tokens — FSAC classifies |> as operator)
+  highlights["@lsp.type.operator.fsharp"] = { fg = c.keyword }
+
   return highlights
 end
 
