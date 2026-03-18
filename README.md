@@ -4,6 +4,8 @@
 
 It is not a pixel-perfect port. The goal is to capture the general feel of Rider inside Neovim and tune it for this plugin's current highlight groups.
 
+<img width="2818" height="1704" alt="image" src="https://github.com/user-attachments/assets/8b2ec780-018d-490c-aea7-1dadd4f76754" />
+
 ## Install
 
 With `lazy.nvim`:
